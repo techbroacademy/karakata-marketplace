@@ -1,0 +1,1 @@
+</main><footer><div class="footer-inner"><a class="brand" href="<?= e(url('index.php')) ?>"><span class="brand-icon">✦</span><span>KARAKATA<small>AFRICAN MARKETPLACE</small></span></a><span>Buy smart. Sell easy. Connect locally.</span><span>© <?= date('Y') ?> KARAKATA</span></div></footer><script src="<?= e(url('assets/app.js')) ?>"></script></body></html>
