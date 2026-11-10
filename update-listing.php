@@ -1,0 +1,1 @@
+<?php require __DIR__.'/includes/bootstrap.php';require_login();if($_SERVER['REQUEST_METHOD']!=='POST'){http_response_code(405);exit;}verify_csrf();$st=db()->prepare("UPDATE products SET status='sold' WHERE id=? AND user_id=?");$st->execute([(int)($_POST['id']??0),current_user()['id']]);flash('Listing updated.');header('Location: '.url('index.php'));exit;
